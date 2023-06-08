@@ -1,0 +1,363 @@
+﻿.* {
+    margin:0;
+    padding:0;
+}
+body, html {
+    font-family: 'Roboto';
+    position: absolute;
+    height: 100%;
+    margin-left: -10px;
+    /*background: linear-gradient(108.87deg, #d1ccf4, #e6cece);*/
+}
+
+.background-1 {
+    position: absolute;
+    display: flex;
+    height: 1100px;
+    width: 1450px;
+    object-fit:contain;
+}
+
+.spotify{
+    margin-left:10px;
+    margin-top:10px;
+}
+/*.bg-img {
+    position: absolute;
+    display: flex;
+    height: 724px;
+    width: 1450px;
+}*/
+
+.List-room {
+    position: absolute;
+    display: block;
+    background: rgb(254, 252, 252);
+    height: 1000px;
+    width: 350px;
+    margin-top: 20px;
+    margin-left: 15px;
+    border-radius: 25px;
+}
+
+    .List-room h1 {
+        background: linear-gradient(122.48deg, #e6cece, rgba(209, 204, 244, 0.7));
+        border: none;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 30px;
+        height: 53px;
+        margin: 10px;
+        padding-left: 70px;
+        padding-top: 10px;
+    }
+
+.space {
+    display: grid;
+    grid-template-columns: 50px 200px;
+    column-gap: 130px;
+}
+
+    .space h2 {
+        font-weight: bold;
+        font-size: 25px;
+        padding-top: 29px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+.control {
+    margin: 35px;
+}
+
+.next,
+.prev {
+    border: none;
+    margin-left: 15px;
+}
+
+.prev-img {
+}
+
+.next-img {
+    margin-left: 5px;
+}
+
+.menu-space {
+    background: linear-gradient(180deg, rgba(209, 204, 244, 0.85) 0%, rgba(230, 206, 206, 0.5) 100%);
+    border: none;
+    border-radius: 20px;
+    height: 170px;
+    margin: 10px;
+}
+
+.cafe,
+.code,
+.lofi,
+.study,
+.art {
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffffff;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.volumn {
+    display: grid;
+    grid-template-columns: 50px 200px;
+    gap: 40px;
+    background: linear-gradient(180deg, rgba(209, 204, 244, 0.85) -121.88%, rgba(230, 206, 206, 0.5) -21.87%);
+    border: none;
+    border-radius: 20px;
+    height: 90px;
+    margin: 10px;
+}
+
+    .volumn audio {
+        margin: 20px 10px;
+    }
+
+.play {
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 15px;
+    border: none;
+    color: #FFFFFF;
+}
+
+.play-img {
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+.to-do-list {
+    background: linear-gradient(180deg, rgba(209, 204, 244, 0.85) -121.88%, rgba(230, 206, 206, 0.5) -21.87%);
+    border: none;
+    border-radius: 20px;
+    height: 190px;
+    margin: 10px;
+}
+
+.checkbox {
+    display: grid;
+    grid-template-columns: 20px 106px 30px;
+    column-gap: 10px;
+}
+
+.trash-img {
+    margin-top: 10px;
+    margin-left: 130px;
+}
+
+.checkbox p {
+    font-weight: bold;
+    margin-top: 15px
+}
+
+.to-do-list h3 {
+    text-decoration-line: underline;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.btn{
+    width: 45px;
+    height: 36px;
+    font-size: 15px;
+    border-radius: 15px;
+    background-color: #EAEAEA;
+
+}
+
+   
+.Room-name {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 150px 100px;
+    column-gap: 0px;
+    background: rgb(254, 252, 252);
+    height: 63px;
+    width: 280px;
+    margin-top: 20px;
+    margin-left: 396px;
+    border-radius: 15px;
+    padding-bottom: 10px;
+}
+
+    .Room-name h3 {
+        margin-top: 20px;
+        margin-left:20px;
+        font-size: 19px;
+        font-weight: bold;
+
+    }
+
+    .Room-name a, .group a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .Room-name img {
+        margin-left: 10px;
+        margin-top: 3px;
+    }
+
+    .Room-name p {
+        margin-left: 0px;
+        margin-top: 3px;
+    }
+
+.out {
+    display: grid;
+    grid-template-columns: 50px 25px;
+    row-gap: 10px;
+    width: 100px;
+    height: 36px;
+    font-size: 15px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 10px;
+    margin-left:20px;
+    padding-top: 5px;
+    font-weight: bold;
+    background-color: #EAEAEA;
+    vertical-align:center;
+}
+
+.timers {
+    position: absolute;
+    background: rgb(254, 252, 252);
+    height: 200px;
+    width: 350px;
+    margin-top: 20px;
+    margin-left: 720px;
+    border-radius: 15px;
+    padding-bottom: 10px;
+}
+
+
+.Timers {
+    display: grid;
+    grid-template-columns: 45px 65px;
+    column-gap: 10px;
+}
+
+    .Timers img {
+        margin: 10px 20px;
+    }
+
+    .Timers h3 {
+        margin-top: 5px;
+        margin-bottom: 2px;
+        font-weight: bold;
+        font-size: 25px;
+    }
+ 
+.break, .session {
+    font-size: 20px;
+}
+.group {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    column-gap: 10px;
+    margin-left: 43px;
+}
+
+    .group h3, .clock h1 {
+        margin: 2px 15px;
+    }
+
+    .group h2 {
+        margin: 2px 17px;
+    }
+
+.clock {
+    margin-top:20px;
+    display: grid;
+    grid-template-columns: 130px 60px 20px;
+    column-gap: 30px;
+    background: linear-gradient(122.48deg, #e6cece, rgba(209, 204, 244, 0.7));
+}
+
+    .clock button {
+        border-radius: 10px;
+        margin-top: 10px;
+        height: 30px;
+        width: 70px;
+        
+    }
+
+  
+.Sound {
+    position: absolute;
+    background: rgb(254, 252, 252);
+    height: 160px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 1110px;
+    border-radius: 15px;
+    padding-bottom: 10px;
+}
+
+    .Sound audio {
+        height: 20px;
+        width: 230px;
+    }
+
+.sound {
+    display: grid;
+    grid-template-columns: 40px 50px;
+    column-gap: 10px;
+}
+
+    .sound img {
+        margin: 10px 20px;
+    }
+
+    .sound h3 {
+        margin: 5px;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+.Volumn {
+    display: grid;
+    grid-template-columns: 40px 30px;
+    column-gap: 20px;
+    row-gap:0px;
+}
+
+    .Volumn p {
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+button:hover {
+    cursor: pointer;
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+    0% {
+        box-shadow: 0 0 0 0 #05bada66;
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+}
