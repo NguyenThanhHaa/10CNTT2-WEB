@@ -1,0 +1,127 @@
+﻿@page
+@model AuthSystem.Areas.Identity.Pages.Account.RoomModel
+@{
+}
+
+    <link rel="stylesheet" href="~/css/Room.css">
+    <link rel="stylesheet" href="~/css/Todolist.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="~/Ảnh chuyên dụng">
+    <title>Room</title>
+    <script src="~/js/Countdown.js"></script>
+
+<div class="background">
+        <div class="background-1">
+            <img src="~/Ảnh chuyên dụng/background-1.gif" class="img-responsive" alt="Responsive image">
+        </div>
+        <!--button control page  & list spaces-->
+        <div class="List-room">
+            <h1>Bread Spaces</h1>
+            <div class="space">
+                <h2>Spaces</h2>
+                <div class="control">
+                    <a href=""><button class="btn prev"><img class="prev-img" src="~/Ảnh chuyên dụng/arrow-prev.png" alt=""></button></a>
+                    <a href=""><button class="btn next"><img class="next-img" src="~/Ảnh chuyên dụng/arrow-next.png" alt=""></button></a>
+                </div>
+            </div>
+            <div class="menu-space">
+                <a href=""><button class="cafe"><img class="cafe-img" src="~/Ảnh chuyên dụng/Group 5.png" alt=""></button></a>
+                <a href=""><button class="code"><img class="code-img" src="~/Ảnh chuyên dụng/image 1188.png" alt=""></button></a>
+                <a href=""><button class="lofi"><img class="lofi-img" src="~/Ảnh chuyên dụng/image 1304.png" alt=""></button></a>
+                <a href=""><button class="study"><img class="study-img" src="~/Ảnh chuyên dụng/image 1231.png" alt=""></button></a>
+                <a href=""> <button class="art"><img class="art-img" src="~/Ảnh chuyên dụng/image 1277.png" alt=""></button></a>
+            </div>
+
+            <!--Spotify-->
+            <iframe class="spotify" style="border-radius:12px" 
+            src="https://open.spotify.com/embed/playlist/4aFB9we2DxFCIfJN4aClnE?utm_source=generator" 
+            width="92%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; 
+            fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+            @*To-do list *@
+            <div id="myDIV" class="header">
+                <p>My To Do List</p>
+                <input type="text" id="myInput" placeholder="Title...">
+                <span onclick="newElement()" class="addBtn">Add</span>
+            </div>
+
+            <ul id="myUL">
+                
+            </ul>
+
+            <script src="~/js/TodoList.js"></script>
+        </div>
+        <!--Room-name-->
+        <div class="Room-name">
+            <h3> Room's name</h3>
+            <a href="~/Identity/Space">
+                <button class="out">
+                    <img src="~/Ảnh chuyên dụng/non.png" alt="">
+                    <p>Out</p>
+                </button>
+            </a>
+        </div>
+        <!--TIMER-->
+    <div class="timers">
+        <div class="Timers">
+            <img src="~/Ảnh chuyên dụng/clock.png" alt="">
+            <h3>Timer</h3>
+        </div>
+        <div class='wrapper'>
+            <div class='align-wrap'>
+                <div class='align'>
+                    <div class='group'>
+                        <div class='left'>
+                            <h3 class='break'>break</h3>
+                            <h2><a id='breakMinus' href="#">-</a><span id='breakMinutes'></span><a id='breakPlus' href="#">+</a></h2>
+                        </div>
+                        <div class='right'>
+                            <h3 class='session'>session</h3>
+                            <h2><a id='sessionMinus' href="#">-</a><span id='sessionMinutes'></span><a id='sessionPlus' href="#">+</a></h2>
+                        </div>
+                    </div>
+                    <div class='clock'>
+                        <h1 class='timer' id='timer'></h1>
+                        <button class='btn right' id='reset'>reset</button>
+                        <button class='btn start' id='start'>start</button>
+                        <button class='btn left' id='pause'>pause</button>
+                        <button class='btn right' id='resetBreak'>reset</button>
+                        <button class='btnstart' id='startBreak'>start</button>
+                        <button class='btn left' id='pauseBreak'>pause</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="~/js/Countdown.js"></script>
+    </div>
+        <!--SOUND-->
+        <div class="Sound">
+            <div class="sound">
+                <img src="~/Ảnh chuyên dụng/sound.png" alt="">
+                <h3>Sound</h3>
+            </div>
+            <div class="Volumn">
+                <p>rain</p>
+                <audio controls loop>
+                <source src="~/Music/Rain-sound.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="Volumn">
+                <p>ocean</p>
+            <audio controls loop>
+                <source src="~/Music/Ocean-waves.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="Volumn">
+                <p>cafe</p>
+            <audio controls loop>
+                <source src="~/Music/Cafe-noise.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    </div>
+
+
+
+
+

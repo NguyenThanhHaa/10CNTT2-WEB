@@ -1,0 +1,68 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewBag.Title = "LogIn";
+}
+
+<link href="~/css/LogIn.css" rel="stylesheet" />
+
+<div class="background">
+    <div class="brand-background">
+        <h1 class="bread-space">Bread Space</h1>
+    </div>
+
+    <div class="info">
+        <!-- Log In -->
+        <div class="log-in">
+            Log In
+        </div>
+        <div class="welcome">
+            Welcome to Bread Space
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <section>
+                    <form id="account" method="post">
+                        <hr />
+                        <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                        <div class="form-floating mb-3">
+                            <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                            <label asp-for="Input.Email" class="form-label">Email</label>
+                            <span asp-validation-for="Input.Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="password" />
+                            <label asp-for="Input.Password" class="form-label">Password</label>
+                            <span asp-validation-for="Input.Password" class="text-danger"></span>
+                        </div>
+                        <div class="checkbox mb-3">
+                            <label asp-for="Input.RememberMe" class="form-label">
+                                <input class="form-check-input" asp-for="Input.RememberMe" />
+                                @Html.DisplayNameFor(m => m.Input.RememberMe)
+                            </label>
+                        </div>
+                        <div>
+                            <button class="btn">Log in</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+
+
+        <!-- Don't have account -->
+        <div class="-dont-have-acc-div">
+            <p class="-dont-have-acc">Don't have account,</p>
+            <a class="sign-up-link" href="/Identity/Account/Register">Sign up</a>
+        </div>
+
+
+
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

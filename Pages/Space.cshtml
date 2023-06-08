@@ -1,0 +1,82 @@
+﻿@page
+@model AuthSystem.Areas.Identity.Pages.SpaceModel
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> <!-- Font chữ Roboto-->
+    <link rel="stylesheet" href="~/css/Space.css">
+    <link rel="stylesheet" href="~/Ảnh chuyên dụng">
+    <title>Space</title>
+</head>
+
+<body>
+    <div class="background">
+        <div class="brand-background">
+            <h1 class="bread-space">Bread Space</h1>
+            <!-- Các nút My home, Spaces, Event, About me -->
+            <!-- Nút My home -->
+            <button class="my-home-btn">
+                <img class="home" src="~/Ảnh chuyên dụng/ti-myhome.png" alt="">
+                <a class="my-home-link" href="~/Identity/MyHome">My home</a>
+            </button> <br>
+            <!-- Nút Spaces -->
+            <button class="spaces-btn">
+                <img class="earth" src="~/Ảnh chuyên dụng/ti-earth.png" alt="">
+                <a class="spaces-link" href="">Spaces</a>
+            </button> <br>
+            <!-- Nút Events -->
+            <button class="events-btn">
+                <img class="calender" src="~/Ảnh chuyên dụng/ti-calender.png" alt="">
+                <a class="events-link" href="/Identity/Account/Calendar">Events</a>
+            </button> <br>
+            <!-- Nút About us -->
+            <button class="about-us-btn">
+                <img class="info" src="~/Ảnh chuyên dụng/ti-note.png" alt="">
+                <a class="about-us-link" href="~/Home/AboutUs">About us</a>
+            </button>
+
+            <p class="nhom-2">Group2</p>
+        </div>
+
+        <div class="space-background-div">
+            <div class="space">
+                <h3 class="space-text">Space</h3>
+
+                <!-- Các nút create room, setting, account -->
+                <button class="create-room-btn">
+                    <img class="create-room-img" src="~/Ảnh chuyên dụng/ti-createroom.png" alt="">
+                    <a class="create-room-link" href="~/Identity/Room"> Create room</a>
+                </button>
+                <button class="setting-btn">
+                    <a class="setting-link" href=""> <img class="setting-img" src="~/Ảnh chuyên dụng/ti-setting.png" alt=""></a>
+                </button>
+                <button class="logout-btn">
+                    <a class="logout-link" href=""><img class="logout-img" src="~/Ảnh chuyên dụng/ti-logout.png" alt=""></a>
+                </button>
+            </div>
+
+            <!-- Thanh tìm kiếm  -->
+            <div class="search-div">
+                <div class="search-bar-div">
+                    <input class="search-bar" type="text" placeholder="Search ...">
+                    <button class="search-btn"><a href=""><img class="search-img" src="~/Ảnh chuyên dụng/ti-search.png" alt=""></a></button>
+                </div>
+            </div>
+            <div class="genre-div">
+                <button class="code-btn"><img class="code-img" src="~/Ảnh chuyên dụng/ti-pc.png" alt=""><a class="code" href="">Code</a> </button>
+                <button class="art-btn"><img class="art-img" src="~/Ảnh chuyên dụng/ti-art.png" alt=""><a class="art" href=""> Art</a></button>
+                <button class="lofi-btn"><img class="lofi-img" src="~/Ảnh chuyên dụng/ti-idea.png" alt=""><a class="lofi" href=""> Lofi</a></button>
+                <button class="study-btn"><img class="study-img" src="~/Ảnh chuyên dụng/ti-hat.png" alt=""><a class="study" href=""> Study</a></button>
+                <button class="cafe-btn"><img class="cafe-img" src="~/Ảnh chuyên dụng/ti-cup.png" alt=""><a class="cafe" href=""> Cafe</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
